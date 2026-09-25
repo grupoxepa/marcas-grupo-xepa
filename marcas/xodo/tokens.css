@@ -1,0 +1,14 @@
+/* Xodó — comida brasileira do dia a dia */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=DM+Sans:wght@400;500;700&family=Kaushan+Script&display=swap');
+/* Oferta do Dia (Eduardo Ramalho) não vem neste repositório: baixe em https://www.behance.net/eduardolrsv e declare o @font-face no seu projeto.
+   Sem ela, o fallback é Kaushan Script (Google Fonts). */
+:root{
+  --amarelo:#f5c518; --amarelo-2:#ffd84a; --verde:#1e9a45; --verde-d:#12733a; --mata:#13291c; --folha:#62a84b;
+  --barro:#c9502c; --azul:#2a5f9e; --creme:#f7eed3; --card:#fffaf0;
+  --ink:#13291c; --text:#243128; --muted:#5d6a5f;
+  --slab:'Alfa Slab One', Georgia, serif;
+  --script:'Oferta do Dia', 'Kaushan Script', cursive;
+  --sans:'DM Sans', system-ui, sans-serif;
+  /* xadrez de toalha de boteco (amarelo + verde) */
+  --xadrez:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='36' height='36'><rect width='36' height='36' fill='%23f5c518'/><path d='M0 0h6v6h-6zM12 0h6v6h-6zM24 0h6v6h-6zM6 6h6v6h-6zM18 6h6v6h-6zM30 6h6v6h-6zM0 12h6v6h-6zM12 12h6v6h-6zM24 12h6v6h-6zM6 18h6v6h-6zM18 18h6v6h-6zM30 18h6v6h-6zM0 24h6v6h-6zM12 24h6v6h-6zM24 24h6v6h-6zM6 30h6v6h-6zM18 30h6v6h-6zM30 30h6v6h-6z' fill='%231e9a45'/></svg>");
+}

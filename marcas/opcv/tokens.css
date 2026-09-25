@@ -1,0 +1,12 @@
+/* Ó Pro Cê Vê (OPCV) — boteco mineiro contemporâneo (Vila Buarque) */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Asset&family=Jost:wght@300;400;500;600&family=Mr+Dafoe&family=Stint+Ultra+Condensed&display=swap');
+:root{
+  --paper:#f1ead8; --paper-2:#e9dfc6; --card:#faf6ea; --papel-claro:#fdf6e6;
+  --red:#e8453c; --red-d:#c5352d; --blue:#1ca3dc; --blue-d:#2c77a8; --teal:#3a8593; --yellow:#f6d44a;
+  --ink:#23303a; --text:#33383a; --muted:#6b6a62;
+  --fat:'Abril Fatface', Georgia, serif;          /* títulos de cartaz */
+  --cond:'Stint Ultra Condensed', 'Arial Narrow', sans-serif; /* chamadas e rótulos */
+  --wide:'Asset', Georgia, serif;                  /* letreiro largo, uso pontual */
+  --script:'Mr Dafoe', cursive;                    /* "uai, sô!", assinaturas */
+  --sans:'Jost', system-ui, sans-serif;            /* texto corrido */
+}

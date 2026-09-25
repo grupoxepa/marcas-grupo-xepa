@@ -1,0 +1,13 @@
+/* Grupo XEPA — tokens da marca-mãe (site xepa.cc e Sistema XEPA) */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=DM+Sans:wght@400;500;700&display=swap');
+:root{
+  --green-900:#12291c; --green-800:#1a3a28; --green-700:#23503a; --green-500:#3c7a57;
+  --cream:#f1e8d2; --cream-2:#e6dbbf; --ink:#14201a; --muted:#5c6a60;
+  --yellow:#f4c430; --red:#e2553d;
+  /* cor de cada casa dentro da marca do grupo */
+  --xepa:#3f9a6a; --opcv:#4d8db3; --xodo:#f4c430; --xodo-deep:#1f5a2e;
+  --radius:22px;
+  --display:'Anton', Impact, sans-serif;
+  --serif:'Fraunces', Georgia, serif;
+  --sans:'DM Sans', system-ui, sans-serif;
+}

@@ -1,0 +1,11 @@
+/* XEPA — parrilla, burger e coquetelaria (Santa Cecília) */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=Jost:wght@300;400;500;600&display=swap');
+:root{
+  --paper:#efead3; --paper-2:#e5dfc3; --card:#f8f5e8; --papel-claro:#fbf8ea;
+  --ink:#25443a; --ink-2:#1b332b; --text:#2f3d36; --muted:#5f6d64;
+  --sage:#5f9478; --sage-d:#4a7862; --mint:#8fd6b0;
+  --coral:#ef8f86; --blush:#f2ab9f;
+  --display:'Instrument Serif', 'Times New Roman', serif;
+  --impacto:'Anton', Impact, sans-serif;
+  --sans:'Jost', system-ui, sans-serif;
+}
