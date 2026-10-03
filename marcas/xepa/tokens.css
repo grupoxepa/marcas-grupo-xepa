@@ -8,4 +8,7 @@
   --display:'Instrument Serif', 'Times New Roman', serif;
   --impacto:'Anton', Impact, sans-serif;
   --sans:'Jost', system-ui, sans-serif;
+  /* matriz das artes (cardápio, eventos, posts) */
+  --matriz-preto:#000000; --matriz-menta:#8fd6b0; --matriz-verde:#3c8e6c; --matriz-grunge:#1e3628; --matriz-creme:#f2e9d5;
+  --matriz-display:'Harmond', 'Instrument Serif', serif; --matriz-selo:'Shackleton', 'Anton', sans-serif;
 }
