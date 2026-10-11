@@ -31,11 +31,11 @@
      Modesto Condensed e Futura PT Cond: as MESMAS fontes dos PSDs (kit Adobe Fonts txp0pbg).
      Newstar (DOMINGO) e Sink (12h00) não existem no Adobe Fonts: Futura PT Extra Bold e Futura PT Cond Extra Bold são as mais próximas.
      Story Script: Google Fonts (OFL), é a mesma fonte do original. Nunca usar Brandon/Harmond (são do XEPA). */
-  --opcv-titulo:'modesto-condensed', 'Modesto Condensed', 'ModestoCondensed', 'Alfa Slab One', Georgia, serif;  /* NESTA QUINTA, 12:00, FRANGO com QUIABO, endereço — peso 700 nos títulos */
+  --opcv-titulo:'Modesto Condensed', 'modesto-condensed', 'ModestoCondensed', 'Alfa Slab One', Georgia, serif;  /* NESTA QUINTA, 12:00, FRANGO com QUIABO, endereço — peso 700 nos títulos */
   --opcv-chamada:'Newstar', 'futura-pt', 'Archivo Black', 'Arial Black', sans-serif;                            /* DOMINGO, KAOL e FRANGO com QUIABO — peso 800 */
   --opcv-numero:'Sink', 'futura-pt-condensed', 'League Gothic', 'Arial Narrow', sans-serif;                     /* números de horário (12h00) — peso 800 */
   --opcv-script:'Story Script', cursive;                                                                        /* "Vem tomar uma no", "das/até/as", "até o horário de almoço", "Hoje tem" */
-  --opcv-endereco-curto:'futura-pt-condensed', 'Futura Condensed', 'Futura-CondensedMedium', 'Oswald', sans-serif; /* endereço em 2 linhas do post 1 — peso 500 */
+  --opcv-endereco-curto:'Futura PT Condensed', 'futura-pt-condensed', 'Futura Condensed', 'Futura-CondensedMedium', 'Oswald', sans-serif; /* endereço em 2 linhas do post 1 — peso 500 */
   --opcv-peso-titulo:700; --opcv-peso-chamada:800; --opcv-peso-numero:800; --opcv-peso-endereco:500;
   --opcv-apoio:'Jost', system-ui, sans-serif;                                                /* só fora da arte (site, legenda) */
 
