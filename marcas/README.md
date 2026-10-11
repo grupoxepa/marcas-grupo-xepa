@@ -7,11 +7,11 @@ As regras de uso de cada marca estão nas skills do Claude Code em `.claude/skil
 |---|---|---|
 | Grupo XEPA (marca-mãe) | `marcas/grupo-xepa/` | `/kv-grupo-xepa` |
 | XEPA (KV "XEPA elegante", do cardápio em InDesign) | `marcas/xepa/` | `/kv-xepa` |
-| Ó Pro Cê Vê (OPCV) | `marcas/opcv/` | `/kv-opcv` |
+| Ó Pro Cê Vê (OPCV) (KV = peças do Thobias, 2026) | `marcas/opcv/` | `/kv-opcv` |
 | Xodó | `marcas/xodo/` | `/kv-xodo` |
 | XEPA Convida (ação mensal do XEPA com chefs convidados) | `marcas/xepa-convida/` | `/kv-xepa-convida` |
 
-Arquivos de trabalho (PSD editável do OPCV) e a fonte Oferta do Dia não estão neste repositório público; peça ao Grupo XEPA.
+Arquivos de trabalho (PSDs do Thobias para o OPCV, InDesign do cardápio do XEPA) e a fonte Oferta do Dia não estão neste repositório público; peça ao Grupo XEPA.
 
 ## Logos no CDN (Builderall, usados no site xepa.cc)
 - https://global-files-nginx.builderall.com/49c218a2-297b-4511-bfe8-347caf8791ae/339f5a8bcc7aeb9e0cb163d23467a71850922c046a0b1e9188f6c9c3b9020d7b.png
@@ -29,3 +29,6 @@ baixe com o autor (behance.net/eduardolrsv). Uso pessoal e comercial liberado; p
 Alternativas Google Fonts já no `tokens.css`: Instrument Serif (Harmond), Oswald (Shackleton) e Jost Light (Brandon).
 
 Cada marca pode ter uma pasta `_fora-do-kv/` com assets que saíram do KV (guardados por histórico, com LEIAME explicando o motivo). Não use em peças novas.
+
+**OPCV:** as peças do Thobias usam Modesto Condensed (Adobe Fonts), Newstar, Sink e Futura Condensed Medium, que **não** são distribuídas aqui, e Story Script (Google Fonts, OFL).
+Alternativas no `tokens.css`: Alfa Slab One (títulos Modesto), Archivo Black (Newstar), League Gothic (Sink), Oswald (Futura Condensed).

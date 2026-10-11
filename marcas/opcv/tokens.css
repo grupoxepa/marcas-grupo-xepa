@@ -1,12 +1,55 @@
-/* Ó Pro Cê Vê (OPCV) — boteco mineiro contemporâneo (Vila Buarque) */
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Asset&family=Jost:wght@300;400;500;600&family=Mr+Dafoe&family=Stint+Ultra+Condensed&display=swap');
+/* Ó Pro Cê Vê (OPCV) — boteco mineiro contemporâneo (Vila Buarque)
+   KV = EXATAMENTE a estética das peças do Thobias (POSTS 2026: post1–4.psd + rotulo_03.pdf), atualizado em 11/10/2026.
+   Cartaz serigráfico: papel creme com grão, tintas chapadas (vermelho, azul, teal, azul-claro), sobreposição em multiply.
+   HEX = cor da tinta medida na camada do PSD; "impresso" = como fica depois da textura de papel (medido no JPG final). */
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&family=Alfa+Slab+One&family=Archivo+Black&family=League+Gothic&family=Oswald:wght@400;500&family=Jost:wght@300;400;500&display=swap');
 :root{
-  --paper:#f1ead8; --paper-2:#e9dfc6; --card:#faf6ea; --papel-claro:#fdf6e6;
-  --red:#e8453c; --red-d:#c5352d; --blue:#1ca3dc; --blue-d:#2c77a8; --teal:#3a8593; --yellow:#f6d44a;
-  --ink:#23303a; --text:#33383a; --muted:#6b6a62;
-  --fat:'Abril Fatface', Georgia, serif;          /* títulos de cartaz */
-  --cond:'Stint Ultra Condensed', 'Arial Narrow', sans-serif; /* chamadas e rótulos */
-  --wide:'Asset', Georgia, serif;                  /* letreiro largo, uso pontual */
-  --script:'Mr Dafoe', cursive;                    /* "uai, sô!", assinaturas */
-  --sans:'Jost', system-ui, sans-serif;            /* texto corrido */
+  /* ── Papel ── */
+  --opcv-papel:#f6f6ea;          /* creme do fundo (camada) · impresso #edebdc */
+  --opcv-creme:#f6f6ea;          /* tinta creme: textos e formas sobre azul/teal/vermelho */
+
+  /* ── Tintas (chapadas, sem gradiente) ── */
+  --opcv-vermelho:#ea4136;       /* títulos, textos, OPCV gigante · impresso #e24a3f */
+  --opcv-vermelho-ilustra:#f3433b;/* traço/serigrafia das ilustrações (copos, copo lagoinha), canto "Hoje tem" */
+  --opcv-azul:#17a4de;           /* azul serigrafia (garrafa) */
+  --opcv-azul-fundo:#00abe3;     /* fundo azul chapado (post "Chopp em dobro") · impresso #16a9d4 */
+  --opcv-azul-moldura:#2d92b4;   /* moldura azul (post "Domingo") · impresso #4499ae */
+  --opcv-teal:#378793;           /* faixa inferior verde-azulada (post "Nesta quinta") · impresso #40878d */
+  --opcv-azul-claro:#71c7cb;     /* sombra deslocada dos títulos, cópia atrás do selo OPCV · impresso #79c0bf */
+  --opcv-amarelo-cerveja:#ffdb3f;/* SÓ o líquido da cerveja · impresso #f7d24e */
+  --opcv-sobreposicao:#353a3d;   /* onde azul e vermelho se cruzam em multiply (não é tinta: resulta da mistura) */
+
+  /* Rótulo (embalagem "Pão de queijo tradicional", rotulo_03.pdf) */
+  --opcv-rotulo-vermelho:#e33226;
+  --opcv-rotulo-azul:#40a2b1;
+  --opcv-rotulo-creme:#f7f5ef;
+
+  /* ── Tipografia (nomes exatos das camadas dos PSDs → alternativa livre) ──
+     Modesto Condensed (Adobe Fonts, Parkinson Type) · Newstar · Sink · Futura Condensed Medium: comerciais, NÃO estão no repositório.
+     Story Script: Google Fonts (OFL), é a mesma fonte do original. */
+  --opcv-titulo:'Modesto Condensed', 'ModestoCondensed', 'Alfa Slab One', Georgia, serif;   /* NESTA QUINTA, 12:00, FRANGO com QUIABO, endereço */
+  --opcv-chamada:'Newstar', 'Archivo Black', 'Arial Black', sans-serif;                      /* DOMINGO, KAOL e FRANGO com QUIABO */
+  --opcv-numero:'Sink', 'League Gothic', 'Arial Narrow', sans-serif;                         /* números de horário (12h00) */
+  --opcv-script:'Story Script', cursive;                                                     /* "Vem tomar uma no", "das/até/as", "até o horário de almoço", "Hoje tem" */
+  --opcv-endereco-curto:'Futura Condensed', 'Futura-CondensedMedium', 'Oswald', sans-serif; /* endereço em 2 linhas do post 1 */
+  --opcv-apoio:'Jost', system-ui, sans-serif;                                                /* só fora da arte (site, legenda) */
+
+  /* ── Efeitos ── */
+  --opcv-sombra-titulo:4px 7px 0 #71c7cb;   /* PSD: Sombra projetada 100%, ângulo 123°, distância 8 px, tamanho 0 (dura) em canvas 1900 px */
+  --opcv-endereco-tracking:.21em;           /* endereço caixa alta: tracking 210 */
+  --opcv-script-tracking:-.05em;            /* Story Script: tracking -50 a -70 */
+
+  /* ── Compatibilidade (nomes antigos usados pelo site/sistema; já apontam para os valores medidos) ── */
+  --paper:var(--opcv-papel); --paper-2:#edebdc; --card:var(--opcv-creme); --papel-claro:var(--opcv-creme);
+  --red:var(--opcv-vermelho); --red-d:#c5352d; --blue:var(--opcv-azul); --blue-d:var(--opcv-azul-moldura);
+  --teal:var(--opcv-teal); --yellow:var(--opcv-amarelo-cerveja);
+  --ink:var(--opcv-sobreposicao); --text:#33383a; --muted:#6b6a62;
+  --fat:var(--opcv-titulo); --cond:var(--opcv-titulo); --wide:var(--opcv-chamada); --script:var(--opcv-script); --sans:var(--opcv-apoio);
 }
+
+/* Utilitários prontos */
+.opcv-titulo{font-family:var(--opcv-titulo);text-transform:uppercase;color:var(--opcv-vermelho);text-shadow:var(--opcv-sombra-titulo);line-height:.9}
+.opcv-script{font-family:var(--opcv-script);color:var(--opcv-vermelho);letter-spacing:var(--opcv-script-tracking)}
+.opcv-endereco{font-family:var(--opcv-titulo);text-transform:uppercase;letter-spacing:var(--opcv-endereco-tracking);color:var(--opcv-creme);font-size:.8rem}
+.opcv-papel{background:var(--opcv-papel) url('kv/elementos/papel-creme-opcv.jpg') center/cover}
+.opcv-serigrafia{mix-blend-mode:multiply}
