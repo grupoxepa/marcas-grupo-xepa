@@ -9,6 +9,7 @@ As regras de uso de cada marca estão nas skills do Claude Code em `.claude/skil
 | XEPA | `marcas/xepa/` | `/kv-xepa` |
 | Ó Pro Cê Vê (OPCV) | `marcas/opcv/` | `/kv-opcv` |
 | Xodó | `marcas/xodo/` | `/kv-xodo` |
+| XEPA Convida (ação mensal do XEPA com chefs convidados) | `marcas/xepa-convida/` | `/kv-xepa-convida` |
 
 Arquivos de trabalho (PSD editável do OPCV) e a fonte Oferta do Dia não estão neste repositório público; peça ao Grupo XEPA.
 

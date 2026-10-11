@@ -1,0 +1,13 @@
+/* XEPA CONVIDA — ação mensal do XEPA com chefs convidados (sub-marca do XEPA) */
+@font-face{font-family:'Asteristico';src:url('fontes/Asteristico.otf') format('opentype'),url('fontes/Asteristico.ttf') format('truetype');font-display:swap}
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=Jost:wght@300;400;500;600&display=swap');
+:root{
+  --cv-verde:#265f4e;     /* faixa superior do fundo (verde XEPA com textura) */
+  --cv-verde-faixa:#3c5b4d;/* faixa do nome do convidado */
+  --cv-creme:#ece6c1;     /* metade de baixo do fundo (papel) */
+  --cv-rosa:#f29a92;      /* faixas de data e horário + estrelas */
+  --cv-spray:#d14c61;     /* spray/respingo atrás do convidado */
+  --cv-ink:#1b2a24;       /* preto esverdeado do recorte do logo */
+  --cv-letreiro:'Asteristico', 'Anton', Impact, sans-serif;   /* faixas: dia, nome, horário (sempre em CAIXA ALTA) */
+  --cv-apoio:'Jost', system-ui, sans-serif;                   /* textos de apoio (legenda, site) */
+}
