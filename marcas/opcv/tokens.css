@@ -2,6 +2,9 @@
    KV = EXATAMENTE a estética das peças do Thobias (POSTS 2026: post1–4.psd + rotulo_03.pdf), atualizado em 11/10/2026.
    Cartaz serigráfico: papel creme com grão, tintas chapadas (vermelho, azul, teal, azul-claro), sobreposição em multiply.
    HEX = cor da tinta medida na camada do PSD; "impresso" = como fica depois da textura de papel (medido no JPG final). */
+/* Letras do Thobias com licença: kit Adobe Fonts "OPCV — letras do Thobias" (txp0pbg, conta do Grupo, liberado para xepa.cc e localhost):
+   Modesto Condensed 400/700 · Futura PT Cond 500/800 · Futura PT 800. Fora desses domínios o kit não carrega e valem as livres abaixo. */
+@import url('https://use.typekit.net/txp0pbg.css');
 @import url('https://fonts.googleapis.com/css2?family=Story+Script&family=Alfa+Slab+One&family=Archivo+Black&family=League+Gothic&family=Oswald:wght@400;500&family=Jost:wght@300;400;500&display=swap');
 :root{
   /* ── Papel ── */
@@ -24,14 +27,16 @@
   --opcv-rotulo-azul:#40a2b1;
   --opcv-rotulo-creme:#f7f5ef;
 
-  /* ── Tipografia (nomes exatos das camadas dos PSDs → alternativa livre) ──
-     Modesto Condensed (Adobe Fonts, Parkinson Type) · Newstar · Sink · Futura Condensed Medium: comerciais, NÃO estão no repositório.
-     Story Script: Google Fonts (OFL), é a mesma fonte do original. */
-  --opcv-titulo:'Modesto Condensed', 'ModestoCondensed', 'Alfa Slab One', Georgia, serif;   /* NESTA QUINTA, 12:00, FRANGO com QUIABO, endereço */
-  --opcv-chamada:'Newstar', 'Archivo Black', 'Arial Black', sans-serif;                      /* DOMINGO, KAOL e FRANGO com QUIABO */
-  --opcv-numero:'Sink', 'League Gothic', 'Arial Narrow', sans-serif;                         /* números de horário (12h00) */
-  --opcv-script:'Story Script', cursive;                                                     /* "Vem tomar uma no", "das/até/as", "até o horário de almoço", "Hoje tem" */
-  --opcv-endereco-curto:'Futura Condensed', 'Futura-CondensedMedium', 'Oswald', sans-serif; /* endereço em 2 linhas do post 1 */
+  /* ── Tipografia = as letras dos PSDs do Thobias ──
+     Modesto Condensed e Futura PT Cond: as MESMAS fontes dos PSDs (kit Adobe Fonts txp0pbg).
+     Newstar (DOMINGO) e Sink (12h00) não existem no Adobe Fonts: Futura PT Extra Bold e Futura PT Cond Extra Bold são as mais próximas.
+     Story Script: Google Fonts (OFL), é a mesma fonte do original. Nunca usar Brandon/Harmond (são do XEPA). */
+  --opcv-titulo:'modesto-condensed', 'Modesto Condensed', 'ModestoCondensed', 'Alfa Slab One', Georgia, serif;  /* NESTA QUINTA, 12:00, FRANGO com QUIABO, endereço — peso 700 nos títulos */
+  --opcv-chamada:'Newstar', 'futura-pt', 'Archivo Black', 'Arial Black', sans-serif;                            /* DOMINGO, KAOL e FRANGO com QUIABO — peso 800 */
+  --opcv-numero:'Sink', 'futura-pt-condensed', 'League Gothic', 'Arial Narrow', sans-serif;                     /* números de horário (12h00) — peso 800 */
+  --opcv-script:'Story Script', cursive;                                                                        /* "Vem tomar uma no", "das/até/as", "até o horário de almoço", "Hoje tem" */
+  --opcv-endereco-curto:'futura-pt-condensed', 'Futura Condensed', 'Futura-CondensedMedium', 'Oswald', sans-serif; /* endereço em 2 linhas do post 1 — peso 500 */
+  --opcv-peso-titulo:700; --opcv-peso-chamada:800; --opcv-peso-numero:800; --opcv-peso-endereco:500;
   --opcv-apoio:'Jost', system-ui, sans-serif;                                                /* só fora da arte (site, legenda) */
 
   /* ── Efeitos ── */
@@ -48,8 +53,11 @@
 }
 
 /* Utilitários prontos */
-.opcv-titulo{font-family:var(--opcv-titulo);text-transform:uppercase;color:var(--opcv-vermelho);text-shadow:var(--opcv-sombra-titulo);line-height:.9}
+.opcv-titulo{font-family:var(--opcv-titulo);font-weight:var(--opcv-peso-titulo);text-transform:uppercase;color:var(--opcv-vermelho);text-shadow:var(--opcv-sombra-titulo);line-height:.9}
 .opcv-script{font-family:var(--opcv-script);color:var(--opcv-vermelho);letter-spacing:var(--opcv-script-tracking)}
 .opcv-endereco{font-family:var(--opcv-titulo);text-transform:uppercase;letter-spacing:var(--opcv-endereco-tracking);color:var(--opcv-creme);font-size:.8rem}
 .opcv-papel{background:var(--opcv-papel) url('kv/elementos/papel-creme-opcv.jpg') center/cover}
 .opcv-serigrafia{mix-blend-mode:multiply}
+.opcv-chamada{font-family:var(--opcv-chamada);font-weight:var(--opcv-peso-chamada);text-transform:uppercase;letter-spacing:-.02em;color:var(--opcv-vermelho);line-height:.95}
+.opcv-numero{font-family:var(--opcv-numero);font-weight:var(--opcv-peso-numero);color:var(--opcv-vermelho);line-height:.9}
+.opcv-endereco-curto{font-family:var(--opcv-endereco-curto);font-weight:var(--opcv-peso-endereco);color:var(--opcv-vermelho)}

@@ -36,17 +36,22 @@ Fonte da verdade (11/10/2026): as peças do **Thobias** em Drive falecomxepa `GR
 **Regra de cor:** cada peça usa **papel creme + 1 cor de fundo/estrutura + vermelho** (no máximo 3 tintas + creme). Amarelo só dentro do copo. Nunca verde (é do XEPA/Xodó), nunca preto puro como tinta, nunca gradiente.
 
 ## Tipografia (nomes exatos das camadas de texto dos PSDs)
-| Camada nos PSDs | Onde aparece | Alternativa livre | Regra |
-|---|---|---|---|
-| **ModestoCondensed** (Modesto Condensed, Parkinson Type / Adobe Fonts) | "NESTA QUINTA", "12:00 / 00:00", "FRANGO com QUIABO", endereço | **Alfa Slab One** (títulos) · **Oswald** (endereço) | CAIXA ALTA; títulos com sombra azul-clara dura; "com" menor (≈50%) entre palavras grandes; endereço com tracking 210 |
-| **NewstarRegular** (Newstar) | "DOMINGO", "12h00", "KAOL e / FRANGO com QUIABO" | **Archivo Black** | CAIXA ALTA, tracking +10; "e"/"com" pequenos (≈65%) |
-| **SinkRegular** (Sink) | um "12h00" do post Domingo | **League Gothic** | números condensados |
-| **StoryScript-Regular** (Story Script, Google, OFL) | "Vem tomar uma no", "das / as / até", "até o horário de almoço", "Hoje tem" | **a mesma** (Google Fonts) | caixa baixa ou alta, tracking -30 a -70, sempre em vermelho ou creme |
-| **Futura-CondensedMedium** (Futura Condensed Medium) | endereço em 2 linhas do post 1 | **Oswald 500** | 1ª linha grande (100%), 2ª linha 70% |
+As letras são as do Thobias. **Kit Adobe Fonts "OPCV — letras do Thobias"** (`txp0pbg`, conta Adobe do Grupo, liberado para xepa.cc, *.xepa.cc e localhost): `<link rel="stylesheet" href="https://use.typekit.net/txp0pbg.css">` (o `tokens.css` já importa). No Photoshop/Illustrator: ativar Modesto Condensed e Futura PT no Adobe Fonts da conta.
+
+| Camada nos PSDs | Onde aparece | Na web (kit) | Reserva livre | Regra |
+|---|---|---|---|---|
+| **ModestoCondensed** (Modesto Condensed, Adobe Fonts) | "NESTA QUINTA", "12:00 / 00:00", "FRANGO com QUIABO", endereço | **`modesto-condensed` 700** (a mesma fonte) | Alfa Slab One · Oswald (endereço) | CAIXA ALTA; títulos com sombra azul-clara dura; "com" menor (≈50%) entre palavras grandes; endereço com tracking 210 |
+| **NewstarRegular** (Newstar) | "DOMINGO", "KAOL e / FRANGO com QUIABO" | **`futura-pt` 800** (Newstar não existe no Adobe Fonts) | Archivo Black | CAIXA ALTA, tracking +10; "e"/"com" pequenos (≈65%) |
+| **SinkRegular** (Sink) | "12h00" do post Domingo | **`futura-pt-condensed` 800** (Sink não existe no Adobe Fonts) | League Gothic | números condensados |
+| **StoryScript-Regular** (Story Script, Google, OFL) | "Vem tomar uma no", "das / as / até", "até o horário de almoço", "Hoje tem" | **a mesma** (Google Fonts) | — | caixa baixa ou alta, tracking -30 a -70, sempre em vermelho ou creme |
+| **Futura-CondensedMedium** (Futura Condensed Medium) | endereço em 2 linhas do post 1 | **`futura-pt-condensed` 500** | Oswald 500 | 1ª linha grande (100%), 2ª linha 70% |
+
+Classes prontas no `tokens.css`: `.opcv-titulo` (Modesto 700 + sombra), `.opcv-chamada` (Newstar→Futura PT 800), `.opcv-numero` (Sink→Futura PT Cond 800), `.opcv-script`, `.opcv-endereco`, `.opcv-endereco-curto`.
+**Nunca** Brandon nem Harmond (são do XEPA).
 - **Lettering em imagem** (não é fonte, usar o PNG): "Ó PRO CÊ VÊ" arqueado (`kv/elementos/o-pro-ce-ve-arqueado.png`), "OPCV" gigante arqueado (`opcv-gigante-vermelho.png`), selo OPCV Belo Horizonte–São Paulo (`selo-opcv-bh-sp.png`), "CHOPP EM DOBRO" (`titulo-arqueado-chopp-em-dobro.png`, exemplo de título arqueado creme).
 - **Arqueamento:** títulos grandes vêm em arco convexo suave (sobe no centro) ou em arco ascendente (modelo D). Script nunca arqueado.
 - **Sombra do título** (PSD: Sombra Projetada normal 100%, cor `#71c7cb`, ângulo 123°, distância 8 px, tamanho 0): cópia **dura**, deslocada **≈0,25% da largura para a direita e ≈0,35% para baixo**, sem desfoque. CSS: `text-shadow: 4px 7px 0 #71c7cb` (canvas 1900 px).
-- Fontes comerciais (Modesto Condensed, Newstar, Sink, Futura Condensed) **não estão no repositório**: Modesto Condensed está no Adobe Fonts (conta Creative Cloud); Newstar e Sink precisam de licença; Futura vem no macOS.
+- Nenhum arquivo de fonte comercial entra neste repositório público: as comerciais vêm do kit Adobe Fonts `txp0pbg` (licença da conta do Grupo). Newstar e Sink não têm licença web: usar as substitutas da tabela.
 
 ## Acabamento obrigatório (todas as peças · camadas do topo dos PSDs)
 1. **"Texture"**: preenchimento de padrão (grão de papel) em **Multiplicação, opacidade 50%**, sobre a peça inteira → `kv/elementos/textura-graos-multiply.jpg`.
