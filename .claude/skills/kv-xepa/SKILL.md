@@ -66,7 +66,7 @@ Fonte da verdade: cardápio `mennu_xepa_final_setembro_CORTE_2026` (InDesign, Dr
 - **Explosão/sunburst** creme atrás do objeto (prato, jamón) para destacar sem usar cor.
 - **Lettering** manuscrito de pincel ("CHEESE BACON à cavalo"): verde chapado com sublinhado em pincelada.
 - **Personagem: SEMPRE o XEPINHA.** Toda peça do XEPA que tiver ilustração tem o Xepinha, o mascote, como protagonista, interagindo com o tema (segurando garfo ou copo, espiando de trás do prato, apontando para a data). Nunca inventar outro personagem, mascote genérico ou criança qualquer.
-  - Como ele é: desenho animado dos anos 1930 ("rubber hose"), cabeça grande, cabelo/topete volumoso, olhos grandes ovais, sorriso largo com a língua de fora, luvas de desenho animado, braços de mangueira; traço verde `#2f6b4f`/musgo com meio-tom pontilhado e preenchimento creme, nunca colorido.
+  - Como ele é: desenho animado dos anos 1930 ("rubber hose"), cabeça grande, cabelo/topete volumoso, olhos grandes ovais, sorriso largo com a língua de fora, luvas de desenho animado, braços de mangueira; traço verde `#3c8e6c` ou musgo `#3d4c3b` com meio-tom pontilhado e preenchimento creme, nunca colorido.
   - Na peça: entra num canto ou "saindo" da moldura, menor que o título e sem cobrir o prato; com tracinhos de movimento verdes em volta e, no máximo, uma estrelinha. Exemplo aprovado: post "Arroz de Fraldinha" (Dia das Crianças, 12/10/2026), com o Xepinha de garfo na mão espiando do canto direito.
   - O bartender Diogo (gravura realista com meio-tom) só aparece em peça de coquetelaria e, mesmo assim, o Xepinha continua presente.
 - **Nunca:** cores fora da paleta, gradiente, 3D, foto-realismo colorido, sombra suave, brilho, estética "IA polida".
