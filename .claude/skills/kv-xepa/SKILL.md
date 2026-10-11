@@ -65,15 +65,18 @@ Fonte da verdade: cardápio `mennu_xepa_final_setembro_CORTE_2026` (InDesign, Dr
 - **Cores:** duas tintas no máximo: traço musgo `#3d4c3b` **ou** verde `#3c8e6c` sobre preenchimento creme `#fefceb`. Variações aceitas: traço sálvia `#96a478` (copinho), verde garrafa `#008f6b` (copos brindando), branco sobre faixa verde (cabeça do Xepinha).
 - **Explosão/sunburst** creme atrás do objeto (prato, jamón) para destacar sem usar cor.
 - **Lettering** manuscrito de pincel ("CHEESE BACON à cavalo"): verde chapado com sublinhado em pincelada.
-- **Personagens:** Xepinha (lobinho estilo desenho dos anos 1930, "rubber hose") e o bartender Diogo (gravura realista com meio-tom).
+- **Personagem: SEMPRE o XEPINHA.** Toda peça do XEPA que tiver ilustração tem o Xepinha, o mascote, como protagonista, interagindo com o tema (segurando garfo ou copo, espiando de trás do prato, apontando para a data). Nunca inventar outro personagem, mascote genérico ou criança qualquer.
+  - Como ele é: desenho animado dos anos 1930 ("rubber hose"), cabeça grande, cabelo/topete volumoso, olhos grandes ovais, sorriso largo com a língua de fora, luvas de desenho animado, braços de mangueira; traço verde `#2f6b4f`/musgo com meio-tom pontilhado e preenchimento creme, nunca colorido.
+  - Na peça: entra num canto ou "saindo" da moldura, menor que o título e sem cobrir o prato; com tracinhos de movimento verdes em volta e, no máximo, uma estrelinha. Exemplo aprovado: post "Arroz de Fraldinha" (Dia das Crianças, 12/10/2026), com o Xepinha de garfo na mão espiando do canto direito.
+  - O bartender Diogo (gravura realista com meio-tom) só aparece em peça de coquetelaria e, mesmo assim, o Xepinha continua presente.
 - **Nunca:** cores fora da paleta, gradiente, 3D, foto-realismo colorido, sombra suave, brilho, estética "IA polida".
 
 ### Prompt pronto (colar no ChatGPT / gerador de imagem)
 **pt-BR**
-> Ilustração no estilo de gravura (linogravura/xilogravura leve) para o restaurante XEPA: traço de nanquim irregular feito à mão, hachura cruzada e meio-tom pontilhado nas sombras, apenas duas cores chapadas — traço verde musgo #3d4c3b (ou verde #3c8e6c) sobre preenchimento creme #fefceb —, fundo branco liso, sem gradiente, sem sombra suave, sem 3D, sem brilho. Opcional: explosão/sunburst creme atrás do objeto. Objeto centralizado, frontal ou levemente de cima, com bastante respiro. Estética elegante e sóbria de cardápio vintage. Tema: [DESCREVA O PRATO/OBJETO]. Siga exatamente o traço das imagens de referência anexadas.
+> Ilustração no estilo de gravura (linogravura/xilogravura leve) para o restaurante XEPA: traço de nanquim irregular feito à mão, hachura cruzada e meio-tom pontilhado nas sombras, apenas duas cores chapadas — traço verde musgo #3d4c3b (ou verde #3c8e6c) sobre preenchimento creme #fefceb —, fundo branco liso, sem gradiente, sem sombra suave, sem 3D, sem brilho. Opcional: explosão/sunburst creme atrás do objeto. Objeto centralizado, frontal ou levemente de cima, com bastante respiro. Estética elegante e sóbria de cardápio vintage. Personagem obrigatório: o XEPINHA, mascote do XEPA — desenho animado dos anos 1930 (rubber hose), cabeça grande, topete volumoso, olhos grandes ovais, sorriso largo com a língua de fora, luvas de desenho animado —, no mesmo traço verde com meio-tom, interagindo com o tema e sem cobrir o prato; não invente outro personagem. Tema: [DESCREVA O PRATO/OBJETO]. Siga exatamente o traço das imagens de referência anexadas e o desenho do Xepinha.
 
 **English**
-> Engraving-style illustration (light linocut/woodcut look) for the XEPA restaurant: irregular hand-drawn ink line, cross-hatching and stippled halftone in the shadows, only two flat colors — moss green line #3d4c3b (or green #3c8e6c) over cream fill #fefceb — on a plain white background; no gradients, no soft shadows, no 3D, no gloss. Optional cream sunburst behind the subject. Subject centered, frontal or slightly from above, generous white space. Elegant, sober vintage-menu aesthetic. Subject: [DESCRIBE THE DISH/OBJECT]. Match the line work of the attached reference images exactly.
+> Engraving-style illustration (light linocut/woodcut look) for the XEPA restaurant: irregular hand-drawn ink line, cross-hatching and stippled halftone in the shadows, only two flat colors — moss green line #3d4c3b (or green #3c8e6c) over cream fill #fefceb — on a plain white background; no gradients, no soft shadows, no 3D, no gloss. Optional cream sunburst behind the subject. Subject centered, frontal or slightly from above, generous white space. Elegant, sober vintage-menu aesthetic. Mandatory character: XEPINHA, the XEPA mascot — a 1930s rubber-hose cartoon with a big head, voluminous quiff, large oval eyes, wide grin with tongue out and cartoon gloves — in the same green halftone line, interacting with the subject without covering the dish; never invent another character. Subject: [DESCRIBE THE DISH/OBJECT]. Match the line work of the attached reference images and the Xepinha design exactly.
 
 **Anexar junto:** `marcas/xepa/kv/referencias-estilo/xepa-traco-jamon-zoom.jpg`, `marcas/xepa/kv/referencias-estilo/xepa-traco-diogo-zoom.jpg`, `marcas/xepa/kv/referencias-estilo/xepa-traco-cavalo-prato.jpg`, `marcas/xepa/kv/referencias-estilo/xepa-layout-caixa-faixa-pontilhado.jpg` (para peças com layout).
 
@@ -87,6 +90,7 @@ Fonte da verdade: cardápio `mennu_xepa_final_setembro_CORTE_2026` (InDesign, Dr
 - Fora do KV (histórico, não usar): `_fora-do-kv/` (ver LEIAME).
 
 ## Regras rápidas
+- Ilustração no XEPA = Xepinha. Sem o Xepinha, a ilustração está errada.
 - Claro, sóbrio, elegante. Se a peça parece "festa", está errada (exceto campanha de aniversário).
 - Fotos de comida: luz natural quente, fundo neutro claro; nunca fundo colorido.
 - Não usar o amarelo do Grupo, o vermelho/azul do OPCV nem o rosa do XEPA CONVIDA (o Convida tem KV próprio: `/kv-xepa-convida`).
