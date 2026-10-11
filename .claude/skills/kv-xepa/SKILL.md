@@ -1,54 +1,92 @@
 ---
 name: kv-xepa
-description: Identidade visual (KV) do XEPA, restaurante de parrilla, burger e coquetelaria autoral na Santa Cecília (São Paulo), flagship do Grupo XEPA. Use ao criar posts, cardápios, hotsite, embalagens, cartazes ou qualquer peça do XEPA. Traz cores, fontes, KVs ilustrados, tom de voz e regras de uso.
+description: Identidade visual (KV) do XEPA, restaurante de parrilla, burger e coquetelaria autoral na Santa Cecília (São Paulo), flagship do Grupo XEPA. KV "XEPA ELEGANTE" (linguagem do cardápio em InDesign): fundo claro, uma cor verde, creme, molduras finas e muito respiro. Use ao criar posts, cardápios, hotsite, embalagens, cartazes, ilustrações ou qualquer peça do XEPA. Traz paleta medida, fontes e alternativas, regras de layout, estilo de ilustração, prompt pronto e referências.
 ---
 
-# KV · XEPA
+# KV · XEPA (XEPA ELEGANTE)
 
 **O melhor burger de São Paulo** · drinks autorais & média gastronomia · Santa Cecília · desde 2023.
-Eleito melhor hambúrguer de SP e 2º melhor do Brasil (Hambúrguer Perfeito). Instagram: **@xepabr**.
+Eleito melhor hambúrguer de SP e 2º melhor do Brasil (Hambúrguer Perfeito). Instagram: **@xepabr** · www.xepa.cc
 
 Assets: `marcas/xepa/` · tokens prontos: `marcas/xepa/tokens.css`
+Fonte da verdade: cardápio `mennu_xepa_final_setembro_CORTE_2026` (InDesign, Drive falecomxepa: GRUPO XEPA/XEPA/CARDAPIO/ANO 3.5.1/FINAL). Referência visual: `kv/referencia-cardapio-comidas.jpg` e `kv/referencia-cardapio-drinks.jpg`.
+
+> Pedido do dono (11/10/2026): **"ELEGANTE, apenas dessas cores e o InDesign; XEPA é nessa elegância, sóbrio, claro."**
 
 ## Essência e tom de voz
 - Manifesto: *"A forma como transformamos o alimento também nos transforma."*
-- Fogo bem usado e respeito pelos ingredientes; valoriza o pequeno produtor e a terra viva; técnica **e** afeto.
-- Tom: seguro, poético na medida, com atitude. Títulos em serifa elegante com uma palavra em itálico.
-- Produto-herói: **Cheese Bacon à Cavalo** (180 g na parrilla, queijo prato, bacon de barriga defumado da casa, ovo, pão de batata, fritas e maionese artesanal).
+- Fogo bem usado e respeito pelos ingredientes; valoriza o pequeno produtor; técnica **e** afeto.
+- Tom: seguro, elegante, sem gritar. Frases curtas. Humor só nas ilustrações (Xepinha, Diogo), nunca no layout.
+- Produto-herói: **Cheese Bacon à Cavalo** (180 g na parrilla, queijo prato, bacon de barriga defumado da casa, ovo, pão de batata).
 
-## Cores
-| Token | Hex | Uso |
+## Paleta (só estas cores · medidas no PDF do cardápio e nas ilustrações)
+| Token | HEX | Uso |
 |---|---|---|
-| `--paper` | `#efead3` | fundo principal (papel) |
-| `--card` | `#f8f5e8` / `#fbf8ea` | cards e áreas claras |
-| `--ink` | `#25443a` | títulos, fundos escuros |
-| `--ink-2` | `#1b332b` | fundo mais profundo |
-| `--sage` | `#5f9478` | apoio, botões |
-| `--mint` | `#8fd6b0` | destaque sobre escuro |
-| `--coral` | `#ef8f86` | acento quente, tags |
-| `--blush` | `#f2ab9f` | acento suave |
-| `--text` | `#2f3d36` | texto corrido |
+| `--xepa-branco` | `#ffffff` | **fundo principal** (o cardápio é branco) |
+| `--xepa-papel` | `#f6f2e9` | fundo alternativo: papel creme claro (`kv/textura-papel-menu.jpg`) |
+| `--xepa-verde` | `#3c8e6c` | **a cor da marca**: títulos de seção, faixas cheias, molduras, logo, lettering "Cheese Bacon à cavalo" |
+| `--xepa-musgo` | `#364b3d` | texto (nomes e descrições) e traço das ilustrações sóbrias (nas artes mede `#3d4c3b`) |
+| `--xepa-creme` | `#fefceb` | preenchimento das ilustrações e caixas |
+| `--xepa-creme-texto` | `#f1e7d5` | texto e filetes **sobre** a faixa verde |
+| `--xepa-salvia` | `#96a478` | ilustração em traço leve (copinho), detalhe |
+| `--xepa-garrafa` | `#008f6b` | ilustração dos copos brindando |
+| `--xepa-pontilhado` | `#009a70` | a corrente de losangos ◇◇◇ entre nome e preço |
 
-## Tipografia (Google Fonts)
-- **Instrument Serif** (com itálico): títulos e manchetes (`--display`).
-- **Jost** 300–600: texto e interface (`--sans`).
-- **Anton**: só em selos, números e chamadas curtas de impacto.
+**Cor de campanha (secundária):** menta `#81d0a7` + preto `#000000` só em peças comemorativas (ex.: "Festa de Aniversário Ano 2", `kv/kv-trio.png`). Nunca no cardápio nem no dia a dia.
+**Proibido:** coral, rosa, salmão, vermelho, amarelo, azul, gradientes, sombra deslocada, fundo escuro de página inteira.
+> A "matriz das artes" de 03/10 (menta + preto + sombra deslocada, commit `ebff34b`) **saiu do KV do dia a dia**: o deslocamento e o preto contradizem o sóbrio. Menta + preto sobrevivem só como cor de campanha de aniversário.
 
-## KVs e logo (`marcas/xepa/`)
-- `logos/xepa-logo.png`: logo.
-- `kv/`: ilustrações da campanha: `kv-cavalo4/5/6/7/9.png` (cavalo, símbolo do "à cavalo"), `kv-lobo.png`, `kv-trio.png`, `kv-copos2.png`, `kv-geleia.png`, `kv-perfeito.png` (selo Hambúrguer Perfeito), `kv-reguas.png`, `kv-tag_01.png` / `kv-tag_01rosa.png` (etiquetas), `kv-DIOGRO.png` (bar/Diogo).
+## Tipografia
+| Papel | Fonte original (InDesign) | Alternativa Google Fonts | Regra |
+|---|---|---|---|
+| Títulos de seção | **Harmond SemiBold Condensed** | **Instrument Serif** | CAIXA ALTA, tracking +6%, verde `#3c8e6c`, centralizado na caixa |
+| Nomes dos itens | **Harmond SemiBold Condensed** | **Instrument Serif** | CAIXA ALTA, tracking +3%, musgo `#364b3d` (creme/branco sobre faixa verde) |
+| Descrições | **Brandon Grotesque Light** | **Jost 300** | caixa normal, entrelinha justa (~1.15), musgo |
+| Selos curtos | **Shackleton Condensed** | **Oswald 500** | CAIXA ALTA, só em selo ("MELHOR HAMBÚRGUER DE SÃO PAULO") |
 
+- Por quê: Instrument Serif é a serifa condensada de alto contraste mais próxima da Harmond SemiBold Condensed (mesmo desenho estreito e "vintage"); Jost Light é geométrica e leve como a Brandon Light; Oswald já vem no pacote do InDesign (pasta *Document fonts*) e é a condensada mais próxima da Shackleton.
+- Hierarquia do cardápio (A3 deitado): título de seção 31 pt · nome do item 19 pt · descrição 12 pt (10 pt nos drinks). Proporção ≈ **1 : 0,6 : 0,4**.
+- Nada de itálico decorativo, nada de negrito pesado, nada de mais de 2 famílias por peça.
+- **Licenças:** Harmond, Shackleton e Brandon Grotesque são comerciais e **não estão neste repositório**. Para o original, comprar licença (Harmond/Dirtyline e Shackleton estavam como "personal use"/teste na pasta FONTS).
 
-## Matriz das artes (comunicação: cardápio, eventos, posts) · definida em 03/10/2026
-Fonte: artes do Aniversário Ano 2, cardápio 09/26 (InDesign) e camiseta Ano 2 (PSD). Vale para Instagram, cardápio e eventos; o site/sistema segue a paleta papel acima.
-- **Tipografia:** Harmond Extra Bold Expanded (marca escrita "Xepa"), Harmond Semi Bold Condensed em CAIXA ALTA (chamadas, nomes de prato), Harmond Semi Bold Condensed *Itálico* em CAIXA ALTA (descrições), Shackleton Condensed (selos curtos, ex.: "CONTRARIANDO AS ESTATÍSTICAS"). Alternativa grátis: Instrument Serif.
-- **Licença:** Harmond (Dirtyline) da pasta FONTS é "free for personal use" e Shackleton é versão teste — comprar licença comercial.
-- **Cores:** preto `#000000` (texto/contorno), menta `#8fd6b0` (sombra deslocada, faixas, ilustração), verde logo `#3c8e6c`, verde grunge `#1e3628`, branco `#ffffff` (fundo), creme cardápio `#f2e9d5`.
-- **Recursos:** título com cópia menta deslocada para baixo/esquerda; faixa preta com sombra menta texturizada entre título e descrição; fotos em moldura arredondada inclinada com contorno preto e bloco menta atrás; mãozinha de luva apontando (carrossel); personagens em traço preto + menta (Xepinha lobinho, burger e copo com pernas); logos de parceiros no topo em preto.
-- **Canva:** kit "XEPA (KIT DE MARCA)" na conta falecomxepa@gmail.com tem tudo isso (paletas "SITE / SISTEMA" e "MATRIZ DAS ARTES", fontes, voz, diretrizes, ícones, elementos e modelos).
+## Regras de layout (a linguagem do InDesign)
+1. **Fundo claro sempre:** branco ou papel creme `#f6f2e9`. Muito respiro: margem externa ≥ 5% do lado menor; nunca encostar texto na moldura.
+2. **Uma cor por peça + creme:** verde `#3c8e6c` para estrutura e títulos, musgo para texto. Sálvia e verde garrafa só dentro de ilustração.
+3. **Caixas com moldura fina ornamentada** (`kv/moldura-caixa.png`, ou CSS `.xepa-caixa`): filete verde de ~1,25 pt com cantos em degrau ("orelhas") e um quadradinho vazado em cada canto. Título da seção dentro da caixa, no topo, centralizado.
+4. **Faixa verde cheia para destaque** (`kv/faixa-verde.png`, ou `.xepa-faixa`): o item em destaque vira uma faixa verde que **vaza um pouco** para fora da moldura dos dois lados, com filete creme interno e os mesmos cantos em degrau. Texto da faixa em branco/creme. No máximo 1 faixa por caixa.
+5. **Preço com pontilhado:** NOME ◇◇◇◇◇◇ PREÇO, na mesma linha; a corrente é de losanguinhos em `#009a70` (CSS: `.xepa-pontilhado`). Preço sem "R$", em Harmond/Instrument Serif, alinhado à direita.
+6. **Ícone de vegetariano:** folhinha verde depois do nome.
+7. **Ilustração como respiro, não como fundo:** uma ilustração por bloco, encostada num canto da caixa ou "saindo" dela (ex.: Cheese Bacon à cavalo saindo da caixa de Hambúrgueres, jamón ao lado do Abuela).
+8. **Logo:** `logos/xepa-logo-verde.png` (verde texturizado) sobre fundo claro; `logos/xepa-logo.png` (musgo) quando a peça pede mais sobriedade. Abaixo: `@xepabr · www.xepa.cc` em descrição pequena. Nunca redesenhar o logo nem pôr sombra.
+9. **Post/stories:** mesma gramática do cardápio: fundo claro, uma caixa com moldura, título em CAIXA ALTA verde, uma ilustração em traço, a faixa verde para a informação principal (data, preço, prato).
 
-## Regras
-- Clima "papel + tinta verde": fundos papel, ilustrações em traço, acentos coral/menta.
-- Uma palavra-chave do título em *itálico* (ex.: "O *melhor* burger de São Paulo").
-- Fotos de comida quentes, perto do fogo; nada de fundo branco de estúdio.
-- Não usar o amarelo do grupo nem o azul/vermelho do OPCV.
+## Estilo de ilustração (XEPA)
+- **Técnica:** gravura (linogravura/xilogravura leve) com **hachura cruzada** e **meio-tom pontilhado** nas sombras, traço de nanquim irregular, contorno à mão. Ver `kv/referencias-estilo/xepa-traco-diogo-zoom.jpg` e `xepa-traco-jamon-zoom.jpg`.
+- **Cores:** duas tintas no máximo: traço musgo `#3d4c3b` **ou** verde `#3c8e6c` sobre preenchimento creme `#fefceb`. Variações aceitas: traço sálvia `#96a478` (copinho), verde garrafa `#008f6b` (copos brindando), branco sobre faixa verde (cabeça do Xepinha).
+- **Explosão/sunburst** creme atrás do objeto (prato, jamón) para destacar sem usar cor.
+- **Lettering** manuscrito de pincel ("CHEESE BACON à cavalo"): verde chapado com sublinhado em pincelada.
+- **Personagens:** Xepinha (lobinho estilo desenho dos anos 1930, "rubber hose") e o bartender Diogo (gravura realista com meio-tom).
+- **Nunca:** cores fora da paleta, gradiente, 3D, foto-realismo colorido, sombra suave, brilho, estética "IA polida".
+
+### Prompt pronto (colar no ChatGPT / gerador de imagem)
+**pt-BR**
+> Ilustração no estilo de gravura (linogravura/xilogravura leve) para o restaurante XEPA: traço de nanquim irregular feito à mão, hachura cruzada e meio-tom pontilhado nas sombras, apenas duas cores chapadas — traço verde musgo #3d4c3b (ou verde #3c8e6c) sobre preenchimento creme #fefceb —, fundo branco liso, sem gradiente, sem sombra suave, sem 3D, sem brilho. Opcional: explosão/sunburst creme atrás do objeto. Objeto centralizado, frontal ou levemente de cima, com bastante respiro. Estética elegante e sóbria de cardápio vintage. Tema: [DESCREVA O PRATO/OBJETO]. Siga exatamente o traço das imagens de referência anexadas.
+
+**English**
+> Engraving-style illustration (light linocut/woodcut look) for the XEPA restaurant: irregular hand-drawn ink line, cross-hatching and stippled halftone in the shadows, only two flat colors — moss green line #3d4c3b (or green #3c8e6c) over cream fill #fefceb — on a plain white background; no gradients, no soft shadows, no 3D, no gloss. Optional cream sunburst behind the subject. Subject centered, frontal or slightly from above, generous white space. Elegant, sober vintage-menu aesthetic. Subject: [DESCRIBE THE DISH/OBJECT]. Match the line work of the attached reference images exactly.
+
+**Anexar junto:** `marcas/xepa/kv/referencias-estilo/xepa-traco-jamon-zoom.jpg`, `marcas/xepa/kv/referencias-estilo/xepa-traco-diogo-zoom.jpg`, `marcas/xepa/kv/referencias-estilo/xepa-traco-cavalo-prato.jpg`, `marcas/xepa/kv/referencias-estilo/xepa-layout-caixa-faixa-pontilhado.jpg` (para peças com layout).
+
+## Assets (`marcas/xepa/`)
+- `logos/xepa-logo-verde.png`: logo verde texturizado (transparente, 2000 px) · `logos/xepa-logo.png`: versão musgo.
+- `kv/moldura-caixa.png`: moldura fina com cantos em degrau (transparente) · `kv/faixa-verde.png`: faixa de destaque (transparente).
+- `kv/textura-papel-menu.jpg`: papel do cardápio, leve (fundo).
+- Ilustrações (transparentes): `kv-cavalo5.png` (lettering verde), `kv-cavalo4.png` (lettering branco, para faixa verde), `kv-cavalo6.png` (prato verde), `kv-cavalo7.png` / `kv-cavalo9.png` (prato musgo/creme), `kv-copos2.png` (copos brindando, verde garrafa), `kv-geleia.png` (geleia de jalapeño), `kv-perfeito.png` (selo Hambúrguer Perfeito), `kv-DIOGRO.png` (Diogo), `ilustra-jamon-abuela.png`, `ilustra-copinho-salvia.png`, `ilustra-xepinha-cabeca-branco.png` (para pôr sobre verde).
+- Campanha de aniversário (menta + preto): `kv-trio.png`.
+- Referências: `kv/referencia-cardapio-comidas.jpg`, `kv/referencia-cardapio-drinks.jpg`, `kv/referencias-estilo/`.
+- Fora do KV (histórico, não usar): `_fora-do-kv/` (ver LEIAME).
+
+## Regras rápidas
+- Claro, sóbrio, elegante. Se a peça parece "festa", está errada (exceto campanha de aniversário).
+- Fotos de comida: luz natural quente, fundo neutro claro; nunca fundo colorido.
+- Não usar o amarelo do Grupo, o vermelho/azul do OPCV nem o rosa do XEPA CONVIDA (o Convida tem KV próprio: `/kv-xepa-convida`).

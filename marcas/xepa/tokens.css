@@ -1,14 +1,50 @@
-/* XEPA — parrilla, burger e coquetelaria (Santa Cecília) */
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=Jost:wght@300;400;500;600&display=swap');
+/* XEPA — parrilla, burger e coquetelaria (Santa Cecília)
+   KV "XEPA ELEGANTE" (11/10/2026): a linguagem do cardápio em InDesign (setembro/2026).
+   Sóbrio, claro, muito respiro: fundo claro + UMA cor verde + creme. Cores medidas no PDF do cardápio e nas ilustrações. */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Jost:wght@300;400;500&family=Oswald:wght@400;500&display=swap');
 :root{
-  --paper:#efead3; --paper-2:#e5dfc3; --card:#f8f5e8; --papel-claro:#fbf8ea;
-  --ink:#25443a; --ink-2:#1b332b; --text:#2f3d36; --muted:#5f6d64;
-  --sage:#5f9478; --sage-d:#4a7862; --mint:#8fd6b0;
-  --coral:#ef8f86; --blush:#f2ab9f;
-  --display:'Instrument Serif', 'Times New Roman', serif;
-  --impacto:'Anton', Impact, sans-serif;
-  --sans:'Jost', system-ui, sans-serif;
-  /* matriz das artes (cardápio, eventos, posts) */
-  --matriz-preto:#000000; --matriz-menta:#8fd6b0; --matriz-verde:#3c8e6c; --matriz-grunge:#1e3628; --matriz-creme:#f2e9d5;
-  --matriz-display:'Harmond', 'Instrument Serif', serif; --matriz-selo:'Shackleton', 'Anton', sans-serif;
+  /* ── Paleta oficial (só estas) ── */
+  --xepa-verde:#3c8e6c;        /* verde XEPA: títulos de seção, faixas cheias, molduras, logo, lettering "Cheese Bacon à cavalo" */
+  --xepa-musgo:#364b3d;        /* verde musgo: texto (nomes e descrições), traço das ilustrações sóbrias (#3d4c3b nas artes) */
+  --xepa-salvia:#96a478;       /* sálvia: ilustração em traço leve (copinho), detalhes */
+  --xepa-garrafa:#008f6b;      /* verde garrafa: copos brindando; no impresso vira #009a70 nos pontilhados */
+  --xepa-pontilhado:#009a70;   /* corrente de losangos ◇◇◇ entre o nome e o preço */
+  --xepa-creme:#fefceb;        /* preenchimento das ilustrações, fundo de caixas */
+  --xepa-creme-texto:#f1e7d5;  /* texto e filetes sobre a faixa verde */
+  --xepa-papel:#f6f2e9;        /* papel do cardápio (textura_menu), fundo alternativo ao branco */
+  --xepa-branco:#ffffff;       /* fundo principal */
+
+  /* ── Campanha (só aniversário / peças comemorativas, nunca no dia a dia) ── */
+  --xepa-campanha-menta:#81d0a7;
+  --xepa-campanha-preto:#000000;
+
+  /* ── Tipografia ──
+     Original (InDesign): Harmond SemiBold Condensed (títulos e nomes de itens), Brandon Grotesque Light (descrições),
+     Shackleton Condensed (selos curtos). Fontes comerciais: NÃO estão neste repositório público.
+     Alternativas Google Fonts abaixo (as mais próximas). */
+  --xepa-titulo:'Harmond SemiBold Condensed', 'Harmond', 'Instrument Serif', 'Times New Roman', serif; /* sempre CAIXA ALTA */
+  --xepa-texto:'Brandon Grotesque', 'Jost', system-ui, sans-serif;  /* peso 300 (Light) */
+  --xepa-selo:'Shackleton Condensed', 'Oswald', 'Arial Narrow', sans-serif; /* CAIXA ALTA, pontual */
+
+  /* ── Medidas do cardápio (A3 deitado, 1190×842 pt) ── */
+  --xepa-moldura-traco:1.25pt;   /* filete da moldura das caixas */
+  --xepa-respiro:1.5rem;         /* respiro mínimo dentro das caixas */
+  --xepa-titulo-tamanho:31pt;    /* título de seção */
+  --xepa-item-tamanho:19pt;      /* nome do item */
+  --xepa-desc-tamanho:12pt;      /* descrição (10pt nas cartas de drinks) */
+
+  /* ── Compatibilidade (nomes antigos usados pelo site/sistema; já apontam para a paleta nova) ── */
+  --paper:var(--xepa-papel); --paper-2:#efe9da; --card:var(--xepa-creme); --papel-claro:var(--xepa-creme);
+  --ink:var(--xepa-musgo); --ink-2:#2b3c31; --text:var(--xepa-musgo); --muted:#6b776d;
+  --sage:var(--xepa-verde); --sage-d:#327859; --mint:var(--xepa-creme-texto);
+  --coral:var(--xepa-verde); --blush:var(--xepa-salvia); /* coral/rosa saíram do KV: mapeados para verde/sálvia */
+  --display:var(--xepa-titulo); --impacto:var(--xepa-selo); --sans:var(--xepa-texto);
 }
+
+/* Utilitários prontos */
+.xepa-titulo{font-family:var(--xepa-titulo);text-transform:uppercase;letter-spacing:.06em;color:var(--xepa-verde);font-weight:400}
+.xepa-item{font-family:var(--xepa-titulo);text-transform:uppercase;letter-spacing:.03em;color:var(--xepa-musgo)}
+.xepa-desc{font-family:var(--xepa-texto);font-weight:300;color:var(--xepa-musgo);line-height:1.15}
+.xepa-faixa{background:var(--xepa-verde);color:var(--xepa-creme-texto);outline:1px solid var(--xepa-creme-texto);outline-offset:-5px}
+.xepa-caixa{border:var(--xepa-moldura-traco) solid var(--xepa-verde);background:var(--xepa-branco);padding:var(--xepa-respiro)}
+.xepa-pontilhado{flex:1;border-bottom:2px dotted var(--xepa-pontilhado);margin:0 .4em .3em}

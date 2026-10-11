@@ -6,7 +6,7 @@ As regras de uso de cada marca estão nas skills do Claude Code em `.claude/skil
 | Marca | Pasta | Skill |
 |---|---|---|
 | Grupo XEPA (marca-mãe) | `marcas/grupo-xepa/` | `/kv-grupo-xepa` |
-| XEPA | `marcas/xepa/` | `/kv-xepa` |
+| XEPA (KV "XEPA elegante", do cardápio em InDesign) | `marcas/xepa/` | `/kv-xepa` |
 | Ó Pro Cê Vê (OPCV) | `marcas/opcv/` | `/kv-opcv` |
 | Xodó | `marcas/xodo/` | `/kv-xodo` |
 | XEPA Convida (ação mensal do XEPA com chefs convidados) | `marcas/xepa-convida/` | `/kv-xepa-convida` |
@@ -24,3 +24,8 @@ Arquivos de trabalho (PSD editável do OPCV) e a fonte Oferta do Dia não estão
 ## Fontes
 Google Fonts (licença OFL) são carregadas pelo `@import` de cada `tokens.css`. A **Oferta do Dia** (Xodó), de Eduardo Ramalho, não é distribuída aqui:
 baixe com o autor (behance.net/eduardolrsv). Uso pessoal e comercial liberado; proibido vender ou modificar sem permissão.
+
+**XEPA:** o cardápio usa Harmond SemiBold Condensed, Shackleton Condensed e Brandon Grotesque Light, fontes comerciais que **não** são distribuídas aqui.
+Alternativas Google Fonts já no `tokens.css`: Instrument Serif (Harmond), Oswald (Shackleton) e Jost Light (Brandon).
+
+Cada marca pode ter uma pasta `_fora-do-kv/` com assets que saíram do KV (guardados por histórico, com LEIAME explicando o motivo). Não use em peças novas.
